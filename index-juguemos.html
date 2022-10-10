@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Proyecto Final (Cappelli.v2)</title>
+</head>
+<body onload="img()">
+    <nav class="navIndex">
+        <a href="./index.html">
+            <svg width="50" height="70">
+                <circle id="logoSVG" cx="25" cy="35" r="15" fill="white"></circle>
+                <text id="txtLogoSvg" style="font-size:medium" x="25" y="40" text-anchor="middle" >X</text>
+            </svg>
+        </a>
+        <ul class="ulIndex">
+            <li class="botonesAnclas"><a href="./index-historia.html">HISTORIA</a></li>
+            <li class="botonesAnclas"><a href="./index-juguemos.html">JUGUEMOS</a></li>
+        </ul>
+    </nav>
+
+    <section class="contenedor01" id="imagenIntro">
+        <div  class="parallax">
+            <div class="textoCentrado">
+        <p class="titulos" style="font-size:xx-large;background-color: #2D2D2D;color: whitesmoke;font-family: Arial, Helvetica, sans-serif;">JUGUEMOS UN POCO</p>    
+            </div>
+        </div>
+    </section>
+
+    <section class="sectionJuego" >
+    <h2 style="font-family: Arial, Helvetica, sans-serif;font-size:xx-large;color: whitesmoke;text-align: center;" >Armemos el Rompecabezas y veamos que imagen es...</h2>
+    <main class="mainRompecabezas">
+        <div id="destino1">arrastre y suelte la imagen aqui</div>
+        <div id="destino2">arrastre y suelte la imagen aqui</div>
+        <div id="destino3">arrastre y suelte la imagen aqui</div>
+        <div id="origen1"><img id="imgOrigen1" src="" class="imagenRompecabezas"  alt="" srcset=""></div>
+        <div id="origen2"><img id="imgOrigen2" class="imagenRompecabezas" src="" alt="" srcset=""></div>
+        <div id="origen3"><img id="imgOrigen3"  class="imagenRompecabezas" src="" alt="" srcset=""></div>
+    </main>
+    <div style="height:30px;margin-top:30px;margin-bottom: 30px;">
+    <button onclick="img()"  class="botonesAnclas botonJuego">Reiniciar</button>
+    </div>
+    </section>
+    
+    <footer class="footerIndex">
+        <div><img src="./assets/imagenes/logo.svg" alt="" srcset=""></div>
+        <div><p style="color:whitesmoke">Sitio con fines Educativos-Creado por M.Victoria Lopez</p></div>
+    </footer>
+    
+        <script src="./script.js"></script>
+</body>
+</html>
