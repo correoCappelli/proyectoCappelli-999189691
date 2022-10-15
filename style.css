@@ -25,7 +25,10 @@ body{
 --textoColor:#000000;
 }
 
+.titulos::selection{
+    background-color:#3F6797;
 
+}
 
 .navIndex{
     display: flex;
@@ -118,6 +121,16 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+
+}
+.footerIndexHistoria{
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start
+    
+    
 
 }
 .sectionVideo{
@@ -354,10 +367,87 @@ height:200%;
 }
 
 
+@keyframes pcSVG{
+    0%{
+        transform: translateY(-50px);
+    }
+    /* 10%{
+        transform: translateY(-45px);
+    }
+    20%{
+        transform: translateY(-35px);
+    }
+    30%{
+        transform: translateY(-25px);
+    }
+    40%{
+        transform: translateY(-15px);
+    } */
+    /* 50%{
+        transform: translateY(0);
+    }
+    60%{
+        transform: translateY(2);
+    }
+    70%{
+        transform: translateY(4);
+    }
+    80%{
+        transform: translateY(6);
+    }
+    90%{
+        transform: translateY(10);
+    } */
+    100%{
+        transform: translateY(0px);
+    }
+}
 
+#rectPcSVG{
+  animation: pcSVG 4s  ;  
+}
 
+@keyframes pcSVG{
+    0%{
+        transform: translateY(-50px);
+        opacity:0 ;
+    }
+    /* 10%{
+        transform: translateY(-45px);
+    }
+    20%{
+        transform: translateY(-35px);
+    }
+    30%{
+        transform: translateY(-25px);
+    }
+    40%{
+        transform: translateY(-15px);
+    } */
+    /* 50%{
+        transform: translateY(0);
+    }
+    60%{
+        transform: translateY(2);
+    }
+    70%{
+        transform: translateY(4);
+    }
+    80%{
+        transform: translateY(6);
+    }
+    90%{
+        transform: translateY(10);
+    } */
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
 
-
+#poliPcSVG{
+  animation: pcSVG 7s  ;  
+}
 
 
 
