@@ -8,14 +8,14 @@
     <title>Proyecto Final (Cappelli.v2)</title>
 </head>
 <body>
-
+<noscript>Este Navegador no soporta Javascript. Por favor activar el mismo o actualizar. </noscript>
 <nav class="navIndex">
     <a href="./index.html">
-        <svg width="150" height="70">
+        <svg class="logoSVG" width="150" height="70"> 
             <!-- <circle id="logoSVG" cx="25" cy="35" r="15" fill="white"></circle> -->
-            <rect id="rectPcSVG" x="50" y="15"  fill="#B1D5E4" width="50" height="25" stroke-width="4" stroke="#3F6797" />
+            <rect id="rectPcSVG" x="50" y="15"  width="50" height="25" stroke-width="4" stroke="#3F6797" />
             <!-- <rect x="50" y="50"  fill="grey" width="50" height="15" stroke-widht="5" /> -->
-            <polygon id="poliPcSVG" points="55,50 95,50 100,65 50,65" fill="#B1D5E4" stroke-width="4" stroke="#3F6797" />
+            <polygon id="poliPcSVG" points="55,50 95,50 100,65 50,65"  stroke-width="4" stroke="#3F6797" />
         </svg>
     </a>
     <ul class="ulIndex">
@@ -30,15 +30,15 @@
         <div  class="parallax">
             <div class="textoCentrado">
                 <!-- se agrego al CSS la clase "titulos" con ::selection  para cambiar color del texto seleccionado  -->
-        <p class="titulos"  style="font-size:xx-large;background-color: #2D2D2D;color: whitesmoke;font-family: Arial, Helvetica, sans-serif;">PROGRAMACION E HISTORIA</p>    
+        <p class="titulos" >PROGRAMACION E HISTORIA</p>    
             </div>
         </div>
     </section>
 
 
     
-<div style="height:350px">
-     <h2 style="font-size:xx-large;color:whitesmoke ;text-align: center;font-family: Arial, Helvetica, sans-serif;">CONTENIDO</h2>
+<div >
+     <h2 class="titulos2">CONTENIDO</h2>
 </div>
 
 <main class="mainTarjetas">
@@ -46,27 +46,32 @@
      <div class="divTarjetas">
          <img class="imagenEtiquetas"  src="./assets/imagenes/img1.jpg" alt="img1">
          <p style="color:#000000;">Conozcamos Un poco sobre la historia de la programacion</p>
-         <!-- para este boton se abre el link en una pestana nueva -->
-         <button name="historia" onclick="openURL(this.name)" class="botonesAnclas buttonEtiquetas" id="ir_a_Historia">Ir a Historia</button>
+         <!-- para este <a> se abre el link en una pestana nueva. Para sto utilizamos target="_blank" -->
+         <a class="botonesAnclas buttonEtiquetas" id="ir_a_Historia" href="./index-historia.html" target="_blank">Ir a Historia</a>
      </div>
      <div class="divTarjetas">
         <img class="imagenEtiquetas"  src="./assets/imagenes/img2.jpg" alt="img2">
         <p style="color:#000000;">Juguemos un poco sobre la computacion</p>
-        <!-- para este boton se abre el link en una pestana nueva -->
-        <button name="juguemos" onclick="openURL(this.name)" class="botonesAnclas buttonEtiquetas" id="ir_a_Juego">Ir a Juego</button>
+        <!-- para este <a> se abre el link en una pestana nueva. Para sto utilizamos target="_blank" -->
+        <a class="botonesAnclas buttonEtiquetas" id="ir_a_Juego" href="./index-juguemos.html" target="_blank">Ir a Juego</a>
     </div>
 </main>
   
 
-<div style="margin-top: 50%"></div>
+<!-- <div style="margin-top: 50%"></div> -->
 
 
-<footer class="footerIndex">
-    <div style="display:flex;flex-direction:row;justify-content:center;align-items:center">
-    <div style="margin-left: 10px;"><img src="./assets/imagenes/logo.svg" alt="" srcset=""></div>
-    <div><p style="color:whitesmoke;font-family: Arial, Helvetica, sans-serif; text-align:center;width: min-content; margin-left: 70px;">PROGRAMACION <br>E<br>  HISTORIA</p></div>
-    </div>
-    <div><p style="color:whitesmoke">Sitio con fines Educativos-Creado por M.Victoria Lopez</p></div>
+<footer class="footer">
+    <div class="divFooter">
+        <div style="margin-left: 10px;">
+            <svg width="150" height="70"> 
+                <rect id="rectPcSVG" x="50" y="15"  fill="#B1D5E4" width="50" height="25" stroke-width="4" stroke="#3F6797" />
+                <polygon id="poliPcSVG" points="55,50 95,50 100,65 50,65" fill="#B1D5E4" stroke-width="4" stroke="#3F6797" />
+            </svg>
+        </div>
+         <div><p class="pFooter">PROGRAMACION <br>E<br>  HISTORIA</p></div>
+      </div>
+    <div style="margin-right: 15px"><p style="color:whitesmoke">Sitio con fines Educativos-Creado por M.Victoria Lopez</p></div>
 </footer>
 
     <script src="./script.js"></script>
